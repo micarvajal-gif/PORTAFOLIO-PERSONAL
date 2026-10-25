@@ -3,9 +3,9 @@
   --color-principal: #0f766e;
   --color-principal-oscuro: #0b5a54;
   --color-acento: #f59e0b;
-  --color-fondo: #f6f7fb;
+  --color-fondo: #2f385a;
   --color-superficie: #ffffff;
-  --color-texto: #1f2a44;
+  --color-texto: #1d2536;
   --color-texto-suave: #55607a;
   --fuente: 'Segoe UI', Tahoma, Arial, sans-serif;
   --radio: 10px;
@@ -254,4 +254,54 @@ body {
 .pie__enlace:hover {
   text-decoration: none;
   color: #ffffff;
+}
+/* ===== Accesibilidad: foco visible con teclado ===== */
+.menu__enlace:focus-visible,
+.boton:focus-visible,
+.enlace:focus-visible,
+.pie__enlace:focus-visible {
+  outline: 3px solid var(--color-acento);
+  outline-offset: 3px;
+}
+
+/* ===== Respetar a quien prefiere menos movimiento ===== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .menu__enlace,
+  .boton,
+  .tarjeta,
+  .proyecto {
+    transition: none;
+  }
+}
+
+/* ===== Ajustes para pantallas pequeñas ===== */
+@media (max-width: 600px) {
+  .encabezado {
+    padding: 1rem;
+  }
+
+  .principal {
+    padding: 2.5rem 1rem;
+  }
+
+  .principal__titulo {
+    font-size: 1.8rem;
+  }
+
+  .principal__imagen {
+    width: 200px;
+    height: 200px;
+  }
+
+  .seccion {
+    padding: 2rem 1rem;
+  }
+
+  .formulario {
+    padding: 1.2rem;
+  }
 }
