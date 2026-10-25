@@ -1,0 +1,30 @@
+/* ===== Variables y base ===== */
+:root {
+  --color-principal: #0f766e;
+  --color-principal-oscuro: #0b5a54;
+  --color-acento: #f59e0b;
+  --color-fondo: #f6f7fb;
+  --color-superficie: #ffffff;
+  --color-texto: #1f2a44;
+  --color-texto-suave: #55607a;
+  --fuente: 'Segoe UI', Tahoma, Arial, sans-serif;
+  --radio: 10px;
+  --espacio: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fuente);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
