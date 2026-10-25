@@ -64,6 +64,57 @@
         </article>
       </div>
     </section>
+    
+    <section class="seccion" id="proyectos">
+      <h2 class="seccion__titulo">Proyectos</h2>
+      <div class="tarjetas">
+        <article class="proyecto">
+          <img class="proyecto__imagen" src="img/proyecto1.jpg" alt="Vista del proyecto Página de presentación">
+          <div class="proyecto__contenido">
+            <h3 class="tarjeta__titulo">Página de presentación</h3>
+            <p class="tarjeta__texto">Primera página web hecha en clase con HTML básico.</p>
+            <a class="enlace" href="#">Ver proyecto</a>
+          </div>
+        </article>
+        <article class="proyecto">
+          <img class="proyecto__imagen" src="img/proyecto2.jpg" alt="Vista del proyecto Lista de tareas">
+          <div class="proyecto__contenido">
+            <h3 class="tarjeta__titulo">Lista de tareas</h3>
+            <p class="tarjeta__texto">Maqueta de una lista de tareas con estilos en CSS.</p>
+            <a class="enlace" href="#">Ver proyecto</a>
+          </div>
+        </article>
+        <article class="proyecto">
+          <img class="proyecto__imagen" src="img/proyecto3.jpg" alt="Vista del proyecto Mi portafolio">
+          <div class="proyecto__contenido">
+            <h3 class="tarjeta__titulo">Mi portafolio</h3>
+            <p class="tarjeta__texto">Este mismo sitio, publicado desde un repositorio de GitHub.</p>
+            <a class="enlace" href="https://github.com/micarvajal-gif/portafolio-personal">Ver repositorio</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion" id="contacto">
+      <h2 class="seccion__titulo">Contacto</h2>
+      <form class="formulario" action="#" method="post">
+        <label class="formulario__etiqueta" for="nombre">Nombre</label>
+        <input class="formulario__campo" type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+        <label class="formulario__etiqueta" for="correo">Correo electrónico</label>
+        <input class="formulario__campo" type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com">
+
+        <label class="formulario__etiqueta" for="mensaje">Mensaje</label>
+        <textarea class="formulario__campo" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+
+        <button class="boton" type="submit">Enviar</button>
+      </form>
+    </section>
   </main>
+  
+  <footer class="pie">
+    <p>&copy; 2026 Michael Carvajal</p>
+    <a class="pie__enlace" href="https://github.com/micarvajal-gif">Mi perfil de GitHub</a>
+  </footer>
 </body>
 </html>

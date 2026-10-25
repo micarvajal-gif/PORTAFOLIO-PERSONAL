@@ -172,3 +172,86 @@ body {
   color: var(--color-texto-suave);
   margin-bottom: 0.8rem;
 }
+/* ===== Proyectos ===== */
+.proyecto {
+  flex: 1 1 260px;
+  background-color: var(--color-superficie);
+  border-radius: var(--radio);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.proyecto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(31, 42, 68, 0.15);
+}
+
+.proyecto__imagen {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.proyecto__contenido {
+  padding: 1.2rem;
+}
+
+.enlace {
+  color: var(--color-principal);
+  font-weight: 600;
+}
+
+.enlace:hover {
+  color: var(--color-acento);
+}
+
+/* ===== Formulario de contacto ===== */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 560px;
+  background-color: var(--color-superficie);
+  padding: 2rem;
+  border-radius: var(--radio);
+}
+
+.formulario__etiqueta {
+  font-weight: 600;
+}
+
+.formulario__campo {
+  padding: 0.7rem;
+  border: 2px solid #d5dae6;
+  border-radius: var(--radio);
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.formulario__campo:hover,
+.formulario__campo:focus {
+  border-color: var(--color-principal);
+  outline: none;
+}
+
+/* ===== Pie de página ===== */
+.pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background-color: var(--color-texto);
+  color: #ffffff;
+}
+
+.pie__enlace {
+  color: var(--color-acento);
+}
+
+.pie__enlace:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
