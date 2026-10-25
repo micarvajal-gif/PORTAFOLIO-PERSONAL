@@ -28,3 +28,97 @@ body {
   color: var(--color-texto);
   line-height: 1.6;
 }
+/* ===== Encabezado y navegación ===== */
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espacio);
+  padding: 1rem 2rem;
+  background-color: var(--color-texto);
+  color: #ffffff;
+}
+
+.encabezado__nombre {
+  font-size: 1.4rem;
+}
+
+.encabezado__profesion {
+  font-size: 0.95rem;
+  color: #c9d1e3;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.menu__enlace {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radio);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.menu__enlace:hover {
+  background-color: var(--color-acento);
+  color: var(--color-texto);
+}
+
+/* ===== Sección principal ===== */
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.principal__texto {
+  flex: 1 1 320px;
+  max-width: 520px;
+}
+
+.principal__titulo {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.principal__descripcion {
+  color: var(--color-texto-suave);
+  margin-bottom: 1.5rem;
+}
+
+.principal__imagen {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid var(--color-acento);
+}
+
+.boton {
+  display: inline-block;
+  background-color: var(--color-principal);
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radio);
+  font-size: 1rem;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.boton:hover {
+  background-color: var(--color-principal-oscuro);
+  transform: translateY(-2px);
+}
